@@ -2,3 +2,9 @@
 bower_components
 node_modules
 npm-debug.log
+
+
+!node_modules/what-input/*
+!node_modules/jquery/*
+!node_modules/foundation-sites/*
+
