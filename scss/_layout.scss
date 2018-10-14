@@ -1,0 +1,10 @@
+//@format
+.container {
+    @include xy-grid-container;
+}
+
+section {
+    padding-bottom: $global-padding*4;
+    margin-bottom: $global-margin*2;
+    border-bottom: 1px dotted $medium-gray;
+}

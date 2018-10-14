@@ -1,0 +1,40 @@
+
+.top-bar { border-bottom: 1px solid $light-gray;
+}
+.navbar {
+
+    margin-bottom:$global-margin*4;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+  .menu {
+
+    a {
+      //color: $white;
+      color: $dark-gray;
+      border: 1px solid $medium-gray;
+      border-width: 1px 0;
+ transition: all 0.3s ease 0s;
+      &:hover {
+          color:#fff;
+          background: $medium-gray;
+      }
+    }
+  }
+}
+
+.topbar-center-logo .top-bar-center {
+  flex: 1 0 auto;
+
+  @include breakpoint(small only) {
+    display: none;
+  }
+}
+
+.topbar-center-logo-mobile {
+
+  .menu-icon {
+    vertical-align: text-top;
+  }
+}

@@ -1,170 +1,212 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <h1>Welcome to Foundation</h1>
-        </div>
-      </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <div class="callout">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-              </div>
-              <div class="large-4 medium-4 cell">
-                <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-              </div>
-              <div class="large-4 medium-4 medium-pull-2 cell">
-                <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-8 medium-8 cell">
-          <h5>Here&rsquo;s your basic grid:</h5>
-          <!-- Grid Example -->
-
-          <div class="grid-x grid-padding-x">
-            <div class="large-12 cell">
-              <div class="primary callout">
-                <p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-          </div>
-
-          <hr />
-
-          <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-          <form>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-12.cell" />
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <div class="grid-x">
-                  <label>Input Label</label>
-                  <div class="input-group">
-                    <input type="text" placeholder="small-9.cell" class="input-group-field" />
-                    <span class="input-group-label">.com</span>
-                  </div>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foundation for Sites</title>
+        <link rel="stylesheet" href="css/app.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Libre+Baskerville:400,700" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main container">
+            <!-- mobile nav bar -->
+            <div class="title-bar topbar-center-logo-mobile" data-responsive-toggle="topbar-center-logo" data-hide-for="medium">
+                <div class="title-bar-left">
+                    <div class="title-bar-title"><img src="https://placehold.it/100x39" alt="" /></div>
                 </div>
-              </div>
+                <div class="title-bar-right">
+                    <button class="menu-icon" type="button" data-toggle="topbar-center-logo"></button>
+                </div>
             </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Select Box</label>
-                <select>
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </div>
+            <!-- /mobile nav bar -->
+
+
+
+
+            <!-- medium and larger nav bar -->
+            <div class="navbar">
+
+                <div class="navbar__left">
+                    <ul data-smooth-scroll class="menu vertical medium-horizontal">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#media">Media</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar__center logo">
+                    <svg width="100%" height="100%" viewBox="0 0 199 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;">
+                        <g transform="matrix(1,0,0,1,-0.383645,-104.779)">
+                        <g id="g3764" transform="matrix(0.680122,0,0,0.604848,0.383645,104.779)">
+                        <path id="path3735" d="M0,0L292,0L292,113L0,113L0,0Z" style="fill:none;"/>
+                        <g id="path3737" transform="matrix(0.205149,0,0,0.230679,17.5244,-37.9422)">
+                        <path d="M232.535,205.127C227.826,205.275 223.634,207.457 222.793,212.383C212.995,241.904 205.878,272.292 197.592,302.16C133.346,306.495 69.1,311.091 4.854,315.643C-12.89,316.553 -30.487,317.246 -47.889,320.975C-43.258,325.223 -38.335,327.086 -33.07,326.609C42.485,324.008 117.941,317.983 193.496,316.336C171.171,397.054 149.091,477.858 126.717,558.576C120.282,585.497 110.19,612.028 106.096,639.295C114.285,635.307 115.748,631.708 118.186,624.035C150.699,520.905 184.673,418.079 216.504,314.775C251.21,311.307 286.209,312.219 320.916,308.664C310.046,327.131 303.71,346.855 294.887,366.016C279.727,391.376 261.74,415.608 248.092,441.748C262.082,443.309 269.394,427.919 278.021,420.289C267.98,447.036 260.374,475.084 253.16,502.568C248.529,520.342 243.12,537.638 241.219,555.889C247.653,553.591 251.748,551.988 255.209,546.439C275.292,517.482 293.717,487.483 314.58,458.959C317.115,454.624 321.258,452.802 325.742,450.461C321.501,474.434 314.629,496.76 312.484,520.689C317.018,518.609 321.404,517.308 324.621,513.58C336.271,500.705 346.8,487.049 358.061,473.957C357.719,494.158 348.751,523.55 362.838,540.934C374.537,553.765 391.549,539.763 401.98,532.783C434.299,505.949 458.232,469.493 480.654,435.896C468.614,432.082 469.881,431.345 463.057,440.535C444.875,468.8 425.329,498.623 399.494,521.945C393.693,526.844 378.728,537.465 371.27,531.006C367.272,519.691 370.345,506.471 372.148,494.939C384.725,494.636 394.327,495.634 402.955,486.01C421.624,465.332 432.299,436.806 427.619,410.232C420.259,407.198 412.802,400.089 404.271,403.904C387.747,412.011 380.679,424.928 372.197,439.061C360.401,459.218 344.314,474.26 329.398,492.857C337.685,470.445 349.726,441.358 340.025,417.818C334.078,418.989 327.156,418.426 322.672,422.588C301.906,441.835 287.867,468.93 273.049,491.775C280.214,470.794 288.306,450.072 296.057,429.264C303.563,409.149 309.511,387.473 319.309,368.139C330.179,346.767 347.483,332.765 347.678,307.752C435.517,303.634 523.403,298.996 611.242,294.791C614.021,296.438 616.751,298.085 619.48,299.732C649.313,294.747 677.828,285.862 707.611,280.92C761.67,271.296 814.608,263.579 869.982,264.143C897.865,264.533 922.676,261.671 949.242,271.338C959.527,275.369 968.203,283.693 965.814,294.357C961.72,322.578 937.494,349.716 917.021,370.654C873.882,412.747 822.211,449.119 769.615,481.371C841.417,522.684 915.168,561.525 987.506,602.188C996.524,606.392 1002.76,612.983 1013.63,608.084C1005.35,602.622 996.817,597.419 987.994,592.65C919.946,555.629 852.239,518.174 784.094,481.283C847.901,441.574 907.906,401.779 960.502,349.932C980.292,329.817 995.939,305.586 990.188,277.885C984.679,260.848 965.864,251.181 947.633,247.063C906.394,238.826 863.547,242.165 822.406,248.971C769.713,256.514 718.824,269.085 667.203,280.789C663.06,276.714 661.108,269.171 653.602,269.734C510.096,279.141 364.982,290.803 221.525,300.08C229.471,272.596 239.609,245.588 247.262,218.061C249.669,210.285 240.384,204.881 232.535,205.127L232.535,205.127ZM405.732,427.01C404.368,449.378 406.124,472.528 381.361,485.359C379.265,462.731 391.011,444.35 405.732,427.01Z" style="fill-rule:nonzero;stroke:black;stroke-width:4.6px;"/>
+                        </g>
+                        <g id="path3739" transform="matrix(0.205149,0,0,0.230679,17.5244,-37.9422)">
+                        <path d="M1164.59,303.158C1161.9,303.267 1159.08,304.145 1156.41,305.672C1150.46,315.642 1147.98,327.347 1143.88,338.055C1134.38,367.013 1122,394.929 1110.05,423.15C1101.72,421.59 1094.6,417.125 1086.61,422.023C1065.01,435.072 1056.63,464.031 1041.22,482.975C1042.3,473.741 1044.25,464.42 1044.44,455.143C1043.52,446.429 1028.16,445.26 1026.26,454.104C1017.14,479.203 1011.1,502.568 987.799,520.775C986.873,502.742 993.308,486.616 1001.01,470.316C1013.54,447.297 1026.55,426.23 1053.7,414.785C1053.8,410.84 1053.95,406.851 1054.09,402.906C1049.9,401.302 1045.66,399.872 1041.37,398.658C1019.82,411.1 1006.32,429.177 995.598,449.508C987.555,463.727 978.148,476.559 958.357,477.166C959.869,465.375 963.718,453.799 964.547,441.965C963.669,434.118 960.94,426.359 959.137,418.643C943.831,413.874 935.642,415.651 925.016,426.402C907.516,446.604 894.257,472.614 892.404,498.277C891.722,509.592 899.474,521.382 913.756,520.125C932.182,519.692 940.077,498.19 950.021,487.525C962.695,486.615 971.909,487.005 983.852,481.5C980.488,493.811 972.492,511.281 979.512,523.246C981.51,528.578 989.699,530.442 994.379,526.324C1008.66,518.565 1016.02,505.344 1024.65,493.119C1025.87,509.115 1034.84,513.233 1047.03,522.943C1055.41,519.649 1063.35,517.265 1069.11,510.502C1092.6,483.321 1105.13,453.973 1121.65,424.018C1114.49,464.463 1099.77,511.673 1108.74,552.379C1127.55,541.975 1136.03,522.684 1148.07,506.471C1163.72,482.108 1183.32,458.482 1194.23,432.125C1180.29,433.165 1178.78,442.053 1172.4,450.939C1156.21,477.687 1138.37,503.48 1120.92,529.533C1119.17,528.233 1117.46,526.889 1115.76,525.545C1126.77,460.043 1147.54,396.882 1170.2,333.98C1172.79,326.221 1176.54,317.29 1175.47,309.141C1173.16,305.19 1169.63,303.325 1165.73,303.158C1165.35,303.142 1164.97,303.143 1164.59,303.158L1164.59,303.158ZM1103.23,436.242C1089.19,462.989 1075.64,498.537 1048.15,516.527C1048.63,489.433 1070.71,462.731 1087.53,441.186C1092.75,439.452 1097.96,437.803 1103.23,436.242L1103.23,436.242ZM936.324,438.02C937.543,450.244 941.589,462.947 940.809,475.215C936.86,488.914 927.502,503.566 913.512,510.979C907.37,510.632 904.542,508.03 905.078,503.262C904.298,477.468 919.41,457.527 936.324,438.02L936.324,438.02Z" style="fill-rule:nonzero;stroke:black;stroke-width:4.6px;"/>
+                        </g>
+                        <path id="path3741" d="M170.24,36.45C168.42,43.82 165.74,50.87 163.44,58.1C160.7,67.24 157.39,76.19 154.7,85.36C153.78,87.64 153.61,90.65 151,91.64C153.81,78.69 157.53,65.92 160.65,53.03C162.3,47.47 163.2,41.55 165.17,36.13C166.55,33.8 168.54,35.64 170.24,36.45Z" style="fill-rule:nonzero;"/>
+                        </g>
+                        </g>
+                    </svg>
+                </div>
+
+
+                <div class="navbar__right">
+                    <ul data-smooth-scroll  class="menu vertical medium-horizontal">
+                        <li><a href="#store">Store</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
             </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-6 medium-6 cell">
-                <label>Choose Your Favorite</label>
-                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-              </div>
-              <div class="large-6 medium-6 cell">
-                <label>Check these out</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Textarea Label</label>
-                <textarea placeholder="small-12.cell"></textarea>
-              </div>
-            </div>
-          </form>
+            <!-- /medium and larger nav bar -->
+
+
+            <!--main section-->
+            <section class="grid-x grid-margin-x main">
+                <!--main-image-->
+                <div class="cell small-6 main-image">
+                    <img src="https://placehold.it/600?text=Main+image" alt="" />
+                </div>
+                <!--/main-image-->
+                <div class="cell small-6 main-info">
+                    <div>
+                        elit vitae modi eligendi qui iste. facere non fugit facere quis sunt eos consequatur impedit non eum enim ducimus expedita perspiciatis perspiciatis praesentium repellat veritatis! voluptate sed laudantium eum laboriosam?
+                    </div>
+
+                </div>
+            </section>
+            <!--/main section-->
+
+            <!--<hr>-->
+
+
+            <section id="about">
+                <h2>About</h2>
+                <!--Bio Cards-->
+                <div class="grid-container">
+                    <div class="grid-x grid-padding-x small-up-2">
+                        <div class="cell">
+                            <div class="card">
+                                <img src="https://via.placeholder.com/300?text=Picture+of+Patrick">
+                                <!--<img src="assets/img/generic/rectangle-1.jpg">-->
+                                <div class="card-section">
+                                    <h4>Patrick Crehan</h4>
+                                    <p class="card-text">
+                                    Adipisicing repellat magni atque ducimus earum eius, deleniti necessitatibus magni! Animi consequuntur qui ratione cumque rerum Ipsam nihil ab sunt a eum Eos cupiditate totam molestias dicta ea Consequuntur architecto?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="card">
+                                <!--<img src="assets/img/generic/rectangle-1.jpg">-->
+                                <img src="https://via.placeholder.com/300?text=Picture+of+Brian">
+                                <div class="card-section">
+                                    <h4 class="card-title">Brian O'Broin</h4>
+                                    <p class="card-text">
+                                    Adipisicing repellat magni atque ducimus earum eius, deleniti necessitatibus magni! Animi consequuntur qui ratione cumque rerum Ipsam nihil ab sunt a eum Eos cupiditate totam molestias dicta ea Consequuntur architecto?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/Bio Cards-->
+            </section>
+            <!--<hr>-->
+
+
+
+            <section id="media" class="grid-x grid-margin-x">
+                <h2 class="cell">Media</h2>
+                <!--slider-->
+                <div class="cell small-6 orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                    <div class="orbit-wrapper">
+                        <div class="orbit-controls">
+                            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                        </div>
+                        <ul class="orbit-container">
+                            <li class="is-active orbit-slide">
+                                <figure class="orbit-figure">
+                                    <img class="orbit-image" src="img/DSC_0049.JPG" alt="Space">
+                                    <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+                                </figure>
+                            </li>
+                            <li class="orbit-slide">
+                                <figure class="orbit-figure">
+                                    <img class="orbit-image" src="img/DSC_0067.JPG" alt="Space">
+                                    <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+                                </figure>
+                            </li>
+                            <li class="orbit-slide">
+                                <figure class="orbit-figure">
+                                    <img class="orbit-image" src="img/the_road_pic.jpg" alt="Space">
+                                    <figcaption class="orbit-caption">Encapsulating</figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                    <nav class="orbit-bullets">
+                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                    </nav>
+                </div>
+                <!--/slider-->
+                <div class="cell small-6 main-info">
+                    <span class="song-title">Song Title 1</span>
+<audio controls preload="metadata" >
+	<source src="audio/5_reel.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+</audio>
+
+                    <span class="song-title">Song Title 1</span>
+<audio controls preload="metadata" >
+	<source src="audio/ballyswede_set.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+</audio>
+
+                    <span class="song-title">Song Title 1</span>
+<audio controls preload="metadata" >
+	<source src="audio/devannys_back.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+</audio>
+
+                </div>
+            </section>
+            <!--<hr>-->
+            <section id="store">
+                <h2>Store</h2>
+            </section>
+            <!--<hr>-->
+            <section id="contact">
+                <h2>Contact</h2>
+            </section>
         </div>
 
-        <div class="large-4 medium-4 cell">
-          <h5>Try one of these buttons:</h5>
-          <p><a href="#" class="button">Simple Button</a><br/>
-          <a href="#" class="success button">Success Btn</a><br/>
-          <a href="#" class="alert button">Alert Btn</a><br/>
-          <a href="#" class="secondary button">Secondary Btn</a></p>
-          <div class="callout">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-            <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
-          </div>
-        </div>
-      </div>
-    </div>
+        <!--Footer-->
+        <footer class="social-footer">
+            <div class="social-footer-left">
+                <a href="#"><img class="logo" src="https://placehold.it/150x30"></a>
+            </div>
+            <div class="social-footer-icons">
+                <ul class="menu simple">
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </footer>
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/what-input/dist/what-input.js"></script>
-    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+        <!--/Footer-->
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/what-input/dist/what-input.js"></script>
+        <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+        <script src="js/app.js"></script>
+    </body>
 </html>
